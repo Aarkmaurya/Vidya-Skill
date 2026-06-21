@@ -1,0 +1,278 @@
+/* ==========================
+   SUCCESS COACHING CENTRE
+   DIGITAL INDIA THEME
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Loader */
+
+#loader{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    position:fixed;
+    z-index:9999;
+}
+
+#loader h1{
+    font-size:3rem;
+    color:#00ffff;
+    text-shadow:0 0 20px cyan;
+}
+
+#loader p{
+    margin-top:10px;
+    color:#ffffff;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.7)
+    ),
+    url("assets/india-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan;
+}
+
+.hero h2{
+    margin-top:15px;
+    color:#ffcc00;
+    font-size:2rem;
+}
+
+.quote{
+    margin-top:25px;
+    font-size:1.3rem;
+    line-height:1.8;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#00ffff;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan;
+}
+
+/* Article */
+
+.article{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 25px;
+}
+
+.article h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#00ffff;
+}
+
+.article p{
+    font-size:1.15rem;
+    line-height:2;
+    margin-bottom:20px;
+}
+
+/* Highlight Box */
+
+.highlight{
+    margin-top:40px;
+
+    background:
+    rgba(0,255,255,.08);
+
+    border:1px solid cyan;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,.3);
+}
+
+.highlight h3{
+    color:#00ffff;
+    margin-bottom:15px;
+}
+
+/* Roadmap */
+
+.roadmap{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.roadmap h2{
+    color:#00ffff;
+    margin-bottom:50px;
+}
+
+.roadmap-card{
+    width:300px;
+
+    display:inline-block;
+
+    margin:15px;
+
+    padding:25px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.4s;
+}
+
+.roadmap-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 0 30px cyan;
+}
+
+.roadmap-card h3{
+    color:#ffcc00;
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    background:#02030a;
+}
+
+footer h2{
+    color:#00ffff;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+.author{
+    margin-top:20px;
+    font-weight:bold;
+    color:#ffcc00;
+}
+
+/* Falling Flowers Container */
+
+#flowers{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:5;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:cyan;
+    border-radius:10px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero h2{
+    font-size:1.2rem;
+}
+
+.quote{
+    font-size:1rem;
+}
+
+.roadmap-card{
+    width:90%;
+}
+
+.article p{
+    font-size:1rem;
+}
+
+}
