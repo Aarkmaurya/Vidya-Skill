@@ -276,3 +276,33 @@ footer p{
 }
 
 }
+.music-btn{
+    margin-top:15px;
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+
+    background:linear-gradient(
+        45deg,
+        #ff9933,
+        #ffffff,
+        #138808
+    );
+
+    color:#000;
+
+    box-shadow:
+    0 0 15px rgba(255,153,51,.7);
+
+    transition:.3s;
+}
+
+.music-btn:hover{
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 25px rgba(255,153,51,.9);
+}
