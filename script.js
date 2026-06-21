@@ -186,3 +186,36 @@ new Date().getFullYear();
 
 footer.innerHTML +=
 `<p>© ${year} Success Coaching Centre</p>`;
+
+/* Music Control */
+
+const musicBtn =
+document.getElementById("musicBtn");
+
+const bgMusic =
+document.getElementById("bgMusic");
+
+let playing = false;
+
+musicBtn.addEventListener("click", () => {
+
+    if(!playing){
+
+        bgMusic.play();
+
+        musicBtn.innerHTML =
+        "⏸️ संगीत बंद करें";
+
+        playing = true;
+
+    }else{
+
+        bgMusic.pause();
+
+        musicBtn.innerHTML =
+        "🔊 प्रेरणादायक संगीत चालू करें";
+
+        playing = false;
+    }
+
+});
